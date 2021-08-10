@@ -59,6 +59,9 @@ footer h3, footer a
 {
     font-size: 1em;
 }
-
+.bloc_footer ul
+{ 
+    list-style-type: none;
+}
 
 
