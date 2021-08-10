@@ -12,57 +12,53 @@ body
 
 
 
-    #bloc_page
-    {
-        width: auto;
-    }
+#bloc_page
+{
+    width: 96%;
+    margin: auto;
+}
 
-    nav 
-    {
-        width: auto;
-        text-align: left;
-    }
-    nav ul 
-    {
-        flex-direction: column;
-    }
-
-    nav li 
-    {
-        padding-left: 4px;
-        list-style-type: none;    
-    }
 
 header
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: normal;
 }
+
 #logo
 {
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
+
+    nav ul 
+    {
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav li 
+    {
+        margin-right: 15px;  
+    }
+
+
+
  
 footer
 { 
     background-color: #f2f2f2;
     display: flex;
-    padding: 25px 25px;
+    padding: 25px 250px 25px 25px;
     justify-content: space-between;
+    list-style-type: none;
 }
 footer h3, footer a 
 {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
-#bloc_footer
-{ 
-    display: flex;
-    justify-content: space-around;
-
-}
 
 
