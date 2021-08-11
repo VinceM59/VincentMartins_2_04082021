@@ -11,19 +11,12 @@ body
 }
 
 
-
-#bloc_page
-{
-    width: 96%;
-    margin: auto;
-}
-
-
 header
 {
     display: flex;
     justify-content: space-between;
     align-items: normal;
+    text-decoration: none;
 }
 
 #logo
@@ -41,12 +34,23 @@ header
 
     nav li 
     {
-        margin-right: 15px;  
-        
+        margin-right: 50px;  
     }
 
 
+.bloc_search ul
+{
+    list-style-type: none;
+    margin-left: 5px;
+    display: flex;
+    margin-top: 32px;
+}
 
+.bloc_search h3
+{
+    margin: 20px;
+    display: flex;
+}
  
 footer
 { 
@@ -63,6 +67,8 @@ footer h3, footer a
 .bloc_footer ul
 { 
     list-style-type: none;
+    padding: 10px;
+    margin: 12px;
 }
 
 
