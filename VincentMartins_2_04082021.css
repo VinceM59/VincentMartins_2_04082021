@@ -2,12 +2,16 @@ body
 {
     font-family : 'Raleway', arial , sans-serif ;
     color: #181818;
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #bloc_page
 {
     width: 100%;
-    margin: auto;
+
 }
 
 a:link 
@@ -19,9 +23,11 @@ a:link
 header
 {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: normal;
-    text-decoration: none;
+    align-items: center;
+    padding: 50px 0px;
+   
 }
 
 #logo
@@ -75,7 +81,7 @@ header
     margin-bottom: 21px;
 }
 
-.marseille_rooms
+.hotel_marseille
  {
     background-color: #F2F2F2;
     display: flex;
@@ -87,7 +93,58 @@ header
     max-width: 805px;
 }
 
+.marseille_rooms
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 60px;
+}
 
+.marseille_room
+{
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 5px 5px 10px 5px;
+    background-color: white;
+    max-width: 236px;
+    margin-bottom: 28px;
+}
+
+.marseille_room_jpg-pic
+{
+    width: 236px;
+    height: 112px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.marseille_room_jpg
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.room_text
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding-left: 16px;
+}
+
+.hotel_name
+{
+    padding-bottom: 11px;
+    padding-top: 11px;
+}
+
+.hotel_price
+{
+    padding-bottom: 15px;
+}
 
 
 
