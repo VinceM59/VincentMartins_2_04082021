@@ -115,7 +115,7 @@ header
 
 .marseille_room_jpg-pic
 {
-    width: 236px;
+    width: 210px;
     height: 112px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -143,10 +143,83 @@ header
 
 .hotel_price
 {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 
+
+/* populaire */
+
+.popular
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 56px;  
+}
+
+.title_pop
+{
+    margin: 0px;
+    font-size: large;
+    margin-bottom: 21px;
+}
+
+.most_populars
+{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    border-radius: 20px;
+    padding: 44px 36px 44px 36px;
+    max-width: 805px;
+}
+
+.marseille_pop
+{
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 5px 5px 10px 5px;
+    background-color: white;
+    max-width: 236px;
+    margin-bottom: 28px;
+}
+
+.most_pop
+{
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 5px 5px 10px 5px;
+    background-color: white;
+    max-width: 236px;
+    margin-bottom: 28px;
+}
+
+.most_pop_jpg
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.most_pop_jpg-pic
+{
+    width: 210px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.most_pop_name_price
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding-left: 16px;
+}
 
 
 
