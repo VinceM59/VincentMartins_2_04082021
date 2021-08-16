@@ -222,6 +222,61 @@ header
 }
 
 
+/* marseille activités*/
+
+#marseille_activities
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    max-width: 1350px;  
+}
+
+.title_activities
+{
+    margin: 0px;
+    font-size: large;
+    margin-bottom: 21px;
+}
+
+.activitie
+{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#activitie1, #activitie2, #activitie3, #activitie4, #activitie5, #activitie6
+{
+    box-shadow: 0 0 20px #0000002e;
+    padding: 0px 0px 20px 0px;
+    border-radius: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+.activitie_jpg
+{
+    background-size: 100% 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 22px 0px;
+}
+
+.activitie_pic
+{
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+/*footer*/
 
 footer
 { 
