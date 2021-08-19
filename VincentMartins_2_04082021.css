@@ -98,6 +98,26 @@ header nav
     flex-wrap: wrap; 
 }
 
+.fa-map-marker-alt 
+{
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.logo_loupe
+{
+    position: relative;
+    height: 40px;
+    background-color: #F2F2F2;
+    width: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 #recherche
 {
     display: flex;
@@ -123,6 +143,20 @@ header nav
     outline: none;
     font-weight: bold;
 }
+
+.loupe 
+{
+    display: none;
+}
+
+/* filtres*/
+
+.filtres
+{
+    display: flex;
+    align-items: center;
+}
+
  
 /* chambres */
 
