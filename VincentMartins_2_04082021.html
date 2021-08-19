@@ -19,39 +19,65 @@
             <div id="logo">
                 <img src="images/logo/Reservia.svg" alt="Logo de Reservia">
             </div>
-            <div>
+            
                 <nav class="navbar">
-                    <ul>
-                        <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><a href="#">S'inscrire</a></li>
-                    </ul>
+                    <div class="search_nav">
+                        <a class="link" href="#">Hébergements</a>
+                        <a class="link" href="#">Activités</a>
+                    </div>
+                    <a class="sign" href="#">S'inscrire</a>
                 </nav>
-            </div>
+            
         </header>
 
 
         <!-- section 1 recherche-->
         <section class="search">
-            <div class="bloc_search">
+            <div class="title_search">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 
+            <div id="recherche">
             <div class="bloc_search">
                 <input class="nav_bar" type="search" placeholder="Marseille, France" />
+                <button class="rechercher"><span>Rechercher</span></button>
+                <button class="loupe"><span></span></button>
+            </div>
             </div>
 
-            <div class="bloc_search">
-                <ul>
-                    <li>
-                        <h3 class="title_search">Filtres</h3>
-                    </li>
-                    <li class="link_search">Economique</li>
-                    <li class="link_search">Familial</li>
-                    <li class="link_search">Romantique</li>
-                    <li class="link_search">Animaux autorisés</li>
-                </ul>
+
+            
+            <div id="filtres-section">
+                <div class="titre_filtres">
+                    <p>Filtres</p>
+                </div>
+                <div class="filtre">
+                    <div class="filtre-bouton">
+                        <div class="circle-icon-filter">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <p>Economique</p>
+                    </div>
+                    <div class="filtre-bouton">
+                        <div class="circle-icon-filter">
+                            <i class="fas fa-male"></i>
+                        </div>
+                        <p>Familial</p>
+                    </div>
+                    <div class="filtre-bouton">
+                        <div class="circle-icon-filter">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <p>Romantique</p>
+                    </div>
+                    <div class="filtre-bouton">
+                        <div class="circle-icon-filter">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <p>Animaux</p>
+                    </div>
+                </div>
             </div>
             <div class="info">
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -264,10 +290,11 @@
             </div>
 
             <div class="activities5et6">
+                
             <div class="activitie5">
                 <a href="#">
                     <div class="activitie_jpg5">
-                        <img class="activitie_pic6" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                        <img class="activitie_pic5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                             alt="Notre-Dame-de-la-Garde">
                         <h3 class="activitie_name">Notre-Dame-de-la-Garde</h3>
                     </div>
@@ -277,7 +304,7 @@
             <div class="activitie6">
                 <a href="#">
                     <div class="activitie_jpg6">
-                        <img class="activite_pic6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                        <img class="activitie_pic6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                         <h3 class="activitie_name">Parc Longchamp</h3>
                     </div>
                 </a>
