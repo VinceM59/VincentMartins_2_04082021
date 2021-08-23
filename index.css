@@ -87,10 +87,12 @@ header nav
     margin-right: 10px;
     color: #0065fc;
 }
+/*barre de recherche*/
+
 
 .title_search h1
 {
-    margin: 20px;
+    margin: 00px;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -111,7 +113,7 @@ header nav
 .logo_loupe
 {
     position: relative;
-    height: 40px;
+    height: 50px;
     background-color: #F2F2F2;
     width: 50px;
     border-top-left-radius: 10px;
@@ -121,7 +123,7 @@ header nav
 #recherche
 {
     display: flex;
-    height: 40px;
+    height: 50px;
     margin-top: 15px;
 }
 
@@ -137,7 +139,7 @@ header nav
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 30%;
-    height: 40px;
+    height: 50px;
     border: none;
     color: white;
     outline: none;
@@ -151,13 +153,84 @@ header nav
 
 /* filtres*/
 
-.filtres
+#filtres
 {
     display: flex;
     align-items: center;
+    margin: 35px 0px 45px 0px;
 }
 
+.title_filtres
+{
+    font-weight: bold;
+}
  
+.filtre
+{
+display: flex;
+flex-wrap: wrap;
+}
+
+.filtre_bouton
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+position: relative;
+margin-left: 30px;
+}
+
+.icon_filter
+{
+    display: flex;
+    position: absolute;
+    background-color: #deebff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 2px;
+    left: 1px;
+}
+
+.filtre p 
+{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 25px;
+    padding: 0px 25px 0px 50px;
+    height: 50px;
+    border: 2px solid #d9d9d9;
+}
+
+
+.fa-male, .fa-money-bill-wave, .fa-heart, .fa-dog
+{
+    font-size: 1.2em;
+    color: #0065fc;
+}
+
+.filtre_bouton p 
+{
+    font-weight: bold;
+}
+
+.filtre_bouton:hover
+{
+    text-decoration: underline;
+    color: #0065fc;
+}
+.info
+{
+font-size:medium;
+font-weight: normal;
+font-style: normal;
+}
+
+
+
 /* chambres */
 
 .room
@@ -186,7 +259,6 @@ header nav
     border-radius: 20px;
     padding: 44px 35px 44px 36px;
     max-width: 805px;
-    margin-right: 50px;
 }
 
 .marseille_rooms
@@ -201,11 +273,11 @@ header nav
 
 .marseille_room
 {
-    border: 0px solid white;
+    border: 2px solid white;
     border-radius: 20px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 5px 10px 5px;
     background-color: white;
-    max-width: 250px;
+    max-width: 240px;
     margin-bottom: 28px;
 }
 
@@ -256,8 +328,7 @@ header nav
 
 .title_pop
 {
-    margin: 0px;
-    font-size: large;
+     font-size: large;
     margin-bottom: 21px;
 }
 
@@ -266,66 +337,64 @@ header nav
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
     border-radius: 20px;
-    padding: 20px 20px 10px 50px;
-    max-width: 805px;
+    padding: 45px 38px 31px 45px;
+    max-width: 345px;
 }
 
 .marseille_pop
 {
-    border: 3px solid white;
-    border-radius: 20px;
-    padding: 5px 5px 10px 5px;
-    background-color: white;
-    max-width: 236px;
-    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .most_pop
 {
+    display: flex;
     border: 3px solid white;
     border-radius: 20px;
-    padding: 5px 5px 10px 5px;
+    padding: 5px 58px 5px 5px;
     background-color: white;
-    max-width: 236px;
+    max-width: 284px;
     margin-bottom: 28px;
+    max-height: 135px;
 }
 
-.most_pop_jpg
-{
-    padding-left: 5px;
-    padding-right: 5px;
-}
+
 
 .most_pop_jpg-pic
 {
-    width: 210px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    object-fit: cover;
 }
 
 
 .most_pop_name_price
 {
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-    padding-left: 16px;
+    padding-bottom: 20px;
 }
 
+.room_text_pop
+{
+    display: flex;
+   padding: 6px 0px 6px 20px;
+   flex-direction: column;
+}
 
 /* marseille activités*/
 
-#marseille_activities
+.marseille_activities
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 60px;
     max-width: 1350px;  
+    background-color: white;
 }
 
 .title_activities
@@ -407,6 +476,7 @@ header nav
     display: flex;
     justify-content: space-around;
     font-size: medium;
+    text-indent: 10px;
 }
 
 /*footer*/
@@ -418,7 +488,7 @@ footer
     padding: 48px 20px 51px 50px;
     justify-content: space-between;
     list-style-type: none;
-    max-width: 1350px;
+    max-width: 1500px;
     flex-wrap: wrap;
     flex-direction: row;
   
