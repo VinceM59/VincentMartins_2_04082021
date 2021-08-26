@@ -2,7 +2,7 @@ body
 {
     font-family : 'Raleway', arial , sans-serif ;
     color: #181818;
-    max-width: 1350px;
+    max-width: 1550px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -132,6 +132,7 @@ header nav
 {
     display: flex;
     justify-content: flex-start;
+    
 }
 .rechercher
 {
@@ -149,6 +150,17 @@ header nav
 .loupe 
 {
     display: none;
+}
+
+.nav_bar
+{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em;
 }
 
 /* filtres*/
@@ -188,10 +200,11 @@ margin-left: 30px;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    top: 2px;
-    left: 1px;
+    width: 52px;
+    height: 54px;
+    top: 0px;
+    left: -2px;
+    cursor: pointer;
 }
 
 .filtre p 
@@ -203,6 +216,8 @@ margin-left: 30px;
     padding: 0px 25px 0px 50px;
     height: 50px;
     border: 2px solid #d9d9d9;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -222,14 +237,27 @@ margin-left: 30px;
     text-decoration: underline;
     color: #0065fc;
 }
-.info
+
+
+h4
 {
-font-size:medium;
+font-size: medium;
 font-weight: normal;
 font-style: normal;
 }
 
+#info
+{
+  
+    margin: 0px 0px 35px 17px;
+}
 
+.fa-info-circle
+ {
+    text-decoration: none;
+   margin-right: 10px;
+    background-color:white;
+}
 
 /* chambres */
 
@@ -320,7 +348,17 @@ font-style: normal;
     font-weight: bold;
 }
 
+.room_notation
+{
+    color: #0065fc;
+    display: flex;
+    padding-left: 16px;
+}
 
+.grey-star
+{
+    color:#EAEDED;
+}
 
 /* populaire */
 
@@ -332,14 +370,20 @@ font-style: normal;
     margin-bottom: 21px;
 }
 
+.chart-line-black
+{
+    margin-left: 25px;
+}
+
 .most_populars
 {
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 45px 38px 31px 45px;
+    padding: 45px 70px 31px 45px;
     max-width: 345px;
+    margin-left: 44px;
 }
 
 .marseille_pop
@@ -354,11 +398,11 @@ font-style: normal;
     display: flex;
     border: 3px solid white;
     border-radius: 20px;
-    padding: 5px 58px 5px 5px;
+    padding: 5px 60px 25px 5px;
     background-color: white;
-    max-width: 284px;
+    max-width: 230px;
     margin-bottom: 28px;
-    max-height: 135px;
+    max-height: 150px;
 }
 
 
@@ -366,7 +410,7 @@ font-style: normal;
 .most_pop_jpg-pic
 {
     width: 130px;
-    height: 130px;
+    height: 170px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
@@ -375,12 +419,13 @@ font-style: normal;
 
 .most_pop_name_price
 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    flex-direction: column;
 }
 
 .room_text_pop
 {
-    display: flex;
+    display: flx;
    padding: 6px 0px 6px 20px;
    flex-direction: column;
 }
