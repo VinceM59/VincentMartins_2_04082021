@@ -3,7 +3,7 @@ body
     font-family : 'Raleway', arial , sans-serif ;
     color: #181818;
     max-width: 1550px;
-    margin: auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +33,7 @@ header
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0px;
+    padding: 23px 0px;
    
 }
 
@@ -79,6 +79,13 @@ header nav
 .search_nav a:hover
 {
     border-top: 3px solid #0065fc;
+    padding-top: 2.4em;
+}
+
+.link
+{
+    border-top: 3px solid #0065fc;
+    padding-top: 2.4em;
 }
 
 .sign
@@ -145,6 +152,7 @@ header nav
     color: white;
     outline: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .loupe 
@@ -175,6 +183,7 @@ header nav
 .title_filtres
 {
     font-weight: bold;
+    font-size: 1.2em;
 }
  
 .filtre
@@ -261,7 +270,7 @@ font-style: normal;
 
 /* chambres */
 
-.room
+#room
 {
     display: flex;
     flex-direction: row;
@@ -273,14 +282,14 @@ font-style: normal;
 .title_room
 {
     margin: 0px;
-    font-size: large;
+    font-size: 1.6em;
     margin-bottom: 20px;
 }
 
-.hotel_marseille
+#hotel_marseille
  {
     background-color: #F2F2F2;
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
@@ -289,14 +298,14 @@ font-style: normal;
     max-width: 805px;
 }
 
-.marseille_rooms
+#marseille_rooms
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: -80px;
 }
 
 .marseille_room
@@ -307,6 +316,7 @@ font-style: normal;
     background-color: white;
     max-width: 240px;
     margin-bottom: 28px;
+    box-shadow: 0 0 20px #5856562e;
 }
 
 .marseille_room_jpg-pic
@@ -375,18 +385,18 @@ font-style: normal;
     margin-left: 25px;
 }
 
-.most_populars
+#most_populars
 {
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 45px 70px 31px 45px;
+    padding: 45px 40px 31px 40px;
     max-width: 345px;
     margin-left: 44px;
 }
 
-.marseille_pop
+#marseille_pop
 {
     display: flex;
     flex-direction: column;
@@ -396,23 +406,24 @@ font-style: normal;
 .most_pop
 {
     display: flex;
-    border: 3px solid white;
+    border: 4px solid white;
     border-radius: 20px;
-    padding: 5px 60px 25px 5px;
+    padding: 0px 120px 25px 5px;
     background-color: white;
     max-width: 230px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     max-height: 150px;
+    box-shadow: 0 0 20px #5856562e;
 }
 
 
 
 .most_pop_jpg-pic
 {
-    width: 130px;
-    height: 170px;
+    width: 140px;
+    height: 175px;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     object-fit: cover;
 }
 
@@ -432,7 +443,7 @@ font-style: normal;
 
 /* marseille activités*/
 
-.marseille_activities
+#marseille_activities
 {
     display: flex;
     flex-direction: column;
@@ -445,10 +456,10 @@ font-style: normal;
 .title_activities
 {
     margin-bottom: 27px;
-    font-size: large;
+    font-size: 1.6em;
 }
 
-.activities
+#activities
 {
     flex-direction: row;
     display: flex;
@@ -464,10 +475,9 @@ font-style: normal;
 
 .activitie1, .activitie2, .activitie3, .activitie4, .activitie5, .activitie6 
 {
-    box-shadow: 0 0 20px #0000002e;
-    padding: 0px 0px 20px 0px;
+    box-shadow: 0 0 20px #5856562e;
     border-radius: 20px;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 41px 0px;
 }
 
 .activitie_jpg1, .activitie_jpg2, .activitie_jpg3, .activitie_jpg4, .activitie_jpg5, .activitie_jpg6
@@ -522,6 +532,8 @@ font-style: normal;
     justify-content: space-around;
     font-size: medium;
     text-indent: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 /*footer*/
@@ -533,7 +545,7 @@ footer
     padding: 48px 20px 51px 50px;
     justify-content: space-between;
     list-style-type: none;
-    max-width: 1500px;
+    max-width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
   
@@ -541,12 +553,19 @@ footer
 footer h3, footer a 
 {
     font-size: 1em;
+    cursor: pointer;
+    margin: 1rem 0;
 }
 .bloc_footer ul
 { 
     list-style-type: none;
     padding: 10px;
-    
+   
+}
+
+.link_footer
+{
+    margin: 1rem 0;
 }
 
 
