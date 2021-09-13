@@ -286,8 +286,9 @@ font-style: normal;
 .title_room
 {
     margin: 0px;
-    font-size: 1.6em;
+    font-size: 1.2em;
     grid-column: 1/-1;
+    font-weight: bold;
 }
 
 #hotel_marseille
@@ -594,7 +595,7 @@ footer h3
 
 }
 
-@media screen and (max-width: 650px)
+@media screen and (max-width: 667px)
 {
 
 
@@ -665,6 +666,10 @@ footer h3
         grid-template-columns: 1fr;
     }
 
+    #hotel_marseille
+    {
+        background: none;
+    }
     #marseille_activities
     {
         grid-template-rows: auto repeat(6, 20rem);
@@ -733,7 +738,7 @@ footer h3
     }
  }
 
- @media screen and (min-width: 650px) and (max-width:1100px)
+ @media screen and (min-width: 667px) and (max-width:1100px)
 {
 
     #room
@@ -759,6 +764,7 @@ footer h3
         grid-template-columns: 1fr 1fr;
     }
 
+    
     #marseille_activities
     {
         grid-template-rows: auto 12rem 12rem 12rem;
@@ -810,15 +816,10 @@ footer h3
         {
             display: block;
         }
-
-        .bloc_footer
-        {
-
-        }
- }
+}       
 
  @media screen and (max-width: 1100px)
- {
+{
     body 
     {
         padding: 0;
@@ -864,19 +865,13 @@ footer h3
         padding: 3rem;
     }
 
-    footer 
-    {
-
-    }
- }
+    
+}
      
- @media screen and (min-width: 650px)
+ @media screen and (min-width: 667px)
  {
      .fa-search
      {
          display: none;
      }
- }
- 
-     
- 
+  }
