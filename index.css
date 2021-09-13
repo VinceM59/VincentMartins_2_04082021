@@ -1,17 +1,13 @@
-body
+html
 {
     font-family : 'Raleway', arial , sans-serif ;
-    color: #181818;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0.5em;
+    color: #181818; 
 }
 
-
-
+body
+{
+    margin: 0;
+}
 
 a:link 
 { 
@@ -26,7 +22,10 @@ header
     justify-content: space-between;
     align-items: center;
     padding: 23px 0px;
-   
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 #logo
@@ -72,13 +71,13 @@ header nav
 .search_nav a:hover
 {
     border-top: 3px solid #0065fc;
-    padding-top: 4.3em;
+    padding-top: 1.6em;
 }
 
 .link
 {
     border-top: 3px solid #0065fc;
-    padding-top: 4.3em;
+    padding-top: 1.6em;
 }
 
 .sign
@@ -90,6 +89,13 @@ header nav
 
 /*barre de recherche*/
 
+article
+{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
 
 .title_search h1
 {
@@ -272,81 +278,60 @@ font-style: normal;
 
 #room
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 56px;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 6fr 3fr;
     
 }
 .title_room
 {
     margin: 0px;
     font-size: 1.6em;
-    margin-bottom: -30px;
+    grid-column: 1/-1;
 }
 
 #hotel_marseille
  {
-    background-color: #F2F2F2;
     display: grid;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    border-radius: 20px;
-    padding: 44px 35px 44px 36px;
-    width: 75%;
-}
-
-#marseille_rooms
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    margin-bottom: -80px;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
 }
 
 .marseille_room
 {
     border: 2px solid white;
-    border-radius: 20px;
-    padding: 5px 5px 10px 2px;
     background-color: white;
-    margin-bottom: 28px;
-    box-shadow: 0 0 20px #5856562e;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .marseille_room_jpg-pic
 {
-    width: 236px;
-    height: 112px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    height: 7rem;
     object-fit: cover;
-}
-
-.marseille_room_jpg
-{
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.room_text
-{
-    
-    flex-direction:column;
-    justify-content: space-around;
-    padding-left: 16px;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .hotel_name
 {
+    margin: 0.25rem 0.75rem 0 0.75rem;
 }
 
 .hotel_price
 {
-    
+   margin: 0.25rem 0.75rem 0 0.75rem; 
 }
 
 .more 
@@ -357,8 +342,7 @@ font-style: normal;
 .room_notation
 {
     color: #0065fc;
-    display: flex;
-    padding-left: 16px;
+    margin: 0.25rem 0.75rem 0 0.75rem;
 }
 
 .grey-star
@@ -368,77 +352,84 @@ font-style: normal;
 
 /* populaire */
 
+#most_populars
+{
+    row-gap: 2rem;
+    display: grid;
+    align-items: start;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
 
-
+#most_populars h2
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
 .title_pop
 {
      font-size: large;
     margin-bottom: 21px;
 }
 
-.chart-line-black
-{
-    margin-left: 50px;
-}
-
-#most_populars
-{
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    padding: 45px 40px 31px 40px;
-    margin-left: 35px;
-    width: 25%;
-}
-
-#marseille_pop
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 30px;
-}
-
 .most_pop
 {
-    border: 4px solid white;
-    border-radius: 20px;
-    padding: 0px 120px 10px 2px;
     background-color: white;
-    margin-bottom: 20px;
-    
-    box-shadow: 0 0 20px #5856562e;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+#most_populars a 
+{
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
 }
 
 .most_pop_jpg-pic1
 {
-    width: 140px;
-    height: 158px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    min-width: 33%;
+    max-width: 33%;
+    border-radius: 1rem 0 0 1rem;
+    width: 100%;
     object-fit: cover;
-    float: left;
 }
 
 .most_pop_jpg-pic
 {
-    width: 140px;
-    height: 157px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    min-width: 33%;
+    max-width: 33%;
+    border-radius: 1rem 0 0 1rem;
+    width: 100%;
     object-fit: cover;
-    float: left;
 }
 
 .most_pop_jpg-pic3
 {
-    width: 140px;
-    height: 158px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    min-width: 33%;
+    max-width: 33%;
+    border-radius: 1rem 0 0 1rem;
+    width: 100%;
     object-fit: cover;
-    float: left;
+    height: 7rem;
 }
 
 .most_pop_name_price
@@ -449,17 +440,17 @@ font-style: normal;
 
 .room_text_pop
 {
-    display: flx;
-   padding: 6px 0px 6px 20px;
+    display: flex;
    flex-direction: column;
-   width: 163px;
-   margin-left: 132px;
+   justify-content: space-between;
 }
 
 .pop_notation
 {
     color: #0065fc;
     display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 /* marseille activités*/
@@ -567,8 +558,7 @@ footer
     justify-content: space-between;
     list-style-type: none;
     flex-direction: row;
-    margin-right: -76px;
-    margin-left: -76px;
+    
 }
 footer h3
 {
@@ -595,7 +585,7 @@ footer h3
 @media screen and (min-width: 1101px)
  {
 
-    #r
+    #room
     {
         display: grid;
         column-gap: 2rem;
@@ -627,30 +617,49 @@ footer h3
         border-bottom: none;
     }
 
-    .header a
+    header a
      {
         width: 50%;
         padding: 0;
     }
 
-    .header nav a 
+    header nav a 
     {
         display: inline-block;
         border-bottom: 3px #f2f2f2 solid;
         width: 100%;
     }
 
-    .header nav a[data-active=true] 
+    header nav a
     {
         border-bottom: 3px #0065FC solid;
         border-top: none;
     }
 
-    .header nav a:hover
+    header nav a:hover
      {
         border-top: none;
     }
 
+    #filtres
+    {
+        flex-direction: column;
+    }
+
+    .filtre
+    {
+        flex-direction: column;
+    }
+
+    .filtre_bouton
+    {
+        margin-bottom: 10px;
+    }
+    #room
+    {
+        flex-direction: column-reverse;
+        display: flex;
+    }
     #hotel_marseille, #marseille_activities
     {
         grid-template-columns: 1fr;
@@ -704,16 +713,47 @@ footer h3
         grid-column: 1/-1;
     }
 
+    .activitie_pic1, .activitie_pic4
+    {
+        height: 100%;
+    }
+
+    .activitie_pic3
+    {
+        height: 100%;
+    }
     #footer
     {
         flex-direction: column;
+    }
+
+    footer h3 
+    {
+        margin: 0;
     }
  }
 
  @media screen and (min-width: 650px) and (max-width:1100px)
 {
 
+    #room
+    {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
     
+    .filtre
+    { 
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .filtre_bouton
+    {
+        margin-bottom: 15px;
+    }
     #hotel_marseille, #marseille_activities
     {
         grid-template-columns: 1fr 1fr;
@@ -729,4 +769,114 @@ footer h3
         {
             grid-column: 1/-1;
         }
+
+        .activitie1
+        {
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        .activitie2
+        {
+            grid-row: 2;
+            grid-column: 2;
+        }
+
+        .activitie3
+        {
+            grid-row: 3;
+            grid-column: 1;
+        }
+
+        .activitie4 
+        {
+            grid-row: 3;
+            grid-column: 2;
+        }
+
+        .activitie5
+        {
+            grid-row: 4;
+            grid-column: 1;
+        }
+
+        .activitie6
+        {
+            grid-row: 4;
+            grid-column: 2;
+        }
+
+        footer 
+        {
+            display: block;
+        }
+
+        .bloc_footer
+        {
+
+        }
  }
+
+ @media screen and (max-width: 1100px)
+ {
+    body 
+    {
+        padding: 0;
+    }
+
+    #search
+    {
+        padding: 0 1rem;
+    }
+
+    #logo
+    {
+        margin-left: 1rem;
+    }
+
+    .link
+    {
+        grid-template-rows: auto auto;
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    #hotel_marseille
+    {
+        background: none;
+    }
+
+    .marseille_room_jpg-pic
+    {
+        height: 14rem;
+    }
+
+    #most_populars
+    {
+        grid-template-rows: auto repeat(3, 12rem);
+        grid-template-columns: 1fr;
+        border-radius: 0;
+        grid-row: 1/2;
+    }
+
+    #marseille_activities
+    {
+        padding: 3rem;
+    }
+
+    footer 
+    {
+
+    }
+ }
+     
+ @media screen and (min-width: 650px)
+ {
+     .fa-search
+     {
+         display: none;
+     }
+ }
+ 
+     
+ 
