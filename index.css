@@ -69,6 +69,7 @@ header nav a
     border-bottom: 3px transparent solid;
 }
 
+
 .sign
 {
     font-weight: bold;
@@ -97,31 +98,20 @@ article
     flex-wrap: wrap; 
 }
 
-.fa-map-marker-alt 
-{
-    position: absolute;
-    color: black;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 
 .logo_loupe
 {
-    position: relative;
-    height: 50px;
     background-color: #F2F2F2;
-    width: 50px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
+        padding: 1rem 1.25rem;
+        border-radius: 1rem 0 0 1rem;
+        text-align: center;
+    }
 
 #recherche
 {
     display: inline-flex;
-    height: 50px;
-    margin-top: 15px;
+   max-width: 100%;
+   overflow: auto;
 }
 
 
@@ -131,24 +121,20 @@ article
     justify-content: flex-start;
     
 }
-.rechercher
+
+
+button
 {
     background-color: #0065FC;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 30%;
-    height: 50px;
-    border: none;
-    color: white;
-    outline: none;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0 1.5rem;
-}
-
-.loupe 
-{
-    display: none;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 0 1rem 1rem 0;
+        font-family: "Raleway", "Sans serif";
+        font-size: 1rem;
+        cursor: pointer;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
 }
 
 .nav_bar
@@ -157,9 +143,11 @@ article
     border-left: none;
     border-top: #F2F2F2 1px solid;
     border-bottom: #F2F2F2 1px solid;
-    font-size: 1em;
+    padding: 0 1.5rem;
+    width: 14rem;
+    font-size: 1rem;
     font-weight: bold;
-    padding: 0.5em;
+    font-family: "Raleway","Sans serif";
 }
 
 /* filtres*/
@@ -558,11 +546,16 @@ footer
 { 
     background-color: #f2f2f2;
     display: flex;
-    padding: 30px 100px 51px 86px;
-    justify-content: space-between;
-    list-style-type: none;
-    flex-direction: row;
-    
+    max-width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;   
+}
+
+.bloc_footer
+{ 
+    padding: 2rem 2rem;
+    width: 25%;
 }
 footer h3
 {
@@ -602,7 +595,7 @@ footer h3
 
 }
 
-@media screen and (max-width: 667px)
+@media screen and (max-width: 750px)
 {
 
 
@@ -625,16 +618,13 @@ footer h3
         border-bottom: none;
     }
 
+    
     header li
      {
         width: 50%;
         padding: 0;
     }
 
-    header ul 
-    {
-
-    }
     .navbar 
     {
         display: inline-block;
@@ -650,15 +640,36 @@ footer h3
 
     .link2 
     {
-        border-bottom: 3px #0065fc solid;
-        border-top: none;
+        border-bottom: 3px #f2f2f2 solid;
     }
 
+    .link2:hover
+    {
+        border-bottom: 3px solid #0065fc;
+        border-top: none;
+    }
     header nav a:hover
      {
         border-top: none;
     }
 
+    header nav a 
+    {
+        display: inline-block;
+        width: 100%;
+        color: #0065fc;
+        border-top: none;
+    }
+
+    .sign
+    {
+        color: #0065fc;
+        font-weight: bold;
+    }
+    #recherche
+    {
+        margin-top: 15px;
+    }
     #filtres
     {
         flex-direction: column;
@@ -672,6 +683,11 @@ footer h3
     .filtre_bouton
     {
         margin-bottom: 10px;
+    }
+
+    .loupe
+    {
+        display: none;
     }
     #room
     {
@@ -691,6 +707,7 @@ footer h3
     {
         grid-template-rows: auto repeat(6, 20rem);
         row-gap: 2rem;
+        margin: 0;
     }
 
     #marseille_activities h2 
@@ -745,9 +762,14 @@ footer h3
         margin: 0;
         margin-bottom: 10px;
     }
+
+    .bloc_footer
+    {
+        width: 90%;
+    }
  }
 
- @media screen and (min-width: 667px) and (max-width:1100px)
+ @media screen and (min-width: 750px) and (max-width:1100px)
 {
 
     #room
@@ -778,6 +800,7 @@ footer h3
     {
         grid-template-rows: auto 12rem 12rem 12rem;
         row-gap: 2rem;
+        margin: 0;
     }
 
         #marseille_activities h2 
@@ -821,10 +844,7 @@ footer h3
             grid-column: 2;
         }
 
-        footer 
-        {
-            display: block;
-        }
+    
 }       
 
  @media screen and (max-width:1100px)
@@ -844,11 +864,7 @@ footer h3
         margin-left: 1rem;
     }
 
-    .link
-    {
-        grid-template-rows: auto auto;
-        row-gap: 2rem;
-    }
+    
 
     #hotel_marseille
     {
