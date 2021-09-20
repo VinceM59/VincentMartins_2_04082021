@@ -670,6 +670,13 @@ footer h3
     {
         margin-top: 15px;
     }
+
+    .nav_bar
+    {
+        width: 10rem;
+        padding: 0;
+        padding-left: 15px;
+    }
     #filtres
     {
         flex-direction: column;
