@@ -217,13 +217,13 @@ padding-right: 1rem;
 
 .filtre_bouton:hover
 {
-    text-decoration: underline;
+    text-decoration: none;
     color: #0065fc;
 }
 
 .filtre_bouton:hover
 {
-    transform: scale(1.01);
+   
     background-color: #dceaff;
 }
 
