@@ -104,14 +104,14 @@ main
 .logo_loupe
 {
     background-color: #F2F2F2;
-        padding: 1rem 1.25rem;
-        border-radius: 1rem 0 0 1rem;
-        text-align: center;
-    }
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+}
 
 #recherche
 {
-    display: inline-flex;
+   display: inline-flex;
    max-width: 100%;
    overflow: auto;
 }
@@ -128,15 +128,15 @@ main
 button
 {
     background-color: #0065FC;
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: 0 1rem 1rem 0;
-        font-family: "Raleway", "Sans serif";
-        font-size: 1rem;
-        cursor: pointer;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .nav_bar
@@ -172,19 +172,19 @@ button
  
 .filtre
 {
-display: flex;
+    display: flex;
 }
 
 .filtre_bouton
 {
-display: flex;
-align-items: center;
-margin-right: 2rem;
-border: 2px solid #d9d9d9;
-border-radius: 2rem;
-cursor: pointer;
-font-weight: bold;
-padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding-right: 1rem;
 }
 
 .icon_filter
@@ -229,9 +229,9 @@ padding-right: 1rem;
 
 h4
 {
-font-size: medium;
-font-weight: normal;
-font-style: normal;
+    font-size: medium;
+    font-weight: normal;
+    font-style: normal;
 }
 
 #info
@@ -367,7 +367,7 @@ font-style: normal;
 }
 .title_pop
 {
-     font-size: large;
+    font-size: large;
     margin-bottom: 21px;
 }
 
@@ -437,7 +437,7 @@ font-style: normal;
 
 .room_text_pop
 {
-    display: flex;
+   display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
@@ -454,6 +454,7 @@ font-style: normal;
 {
     transform: scale(1.01);
 }
+
 /* marseille activités*/
 
 #marseille_activities
@@ -621,7 +622,7 @@ footer h3
 
     
     header li
-     {
+    {
         width: 50%;
         padding: 0;
     }
@@ -650,7 +651,7 @@ footer h3
         border-top: none;
     }
     header nav a:hover
-     {
+    {
         border-top: none;
     }
 
@@ -904,6 +905,6 @@ footer h3
  {
      .fa-search
      {
-         display: none;
+        display: none;
      }
   }
