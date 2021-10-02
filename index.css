@@ -908,3 +908,16 @@ footer h3
         display: none;
      }
   }
+
+  @media  screen and (max-width:650px)
+      {
+          main 
+          {
+              padding: 0;
+          }
+
+          .activitie_name
+          {
+              margin: 1rem 1.2rem;
+          }
+      }
